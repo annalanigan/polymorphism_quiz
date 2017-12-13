@@ -1,6 +1,6 @@
 # Polymorphism & Composition Homework - Quiz
 
-# Polymorphism
+# Polymorphism (IS A)
 
 1. What does the ___word___ 'polymorphism' mean?
 
@@ -31,22 +31,28 @@ It can take the form of itself and an object, and as many more as it has supercl
 
 When you need to use different items at different time that are not necessarily the same object but fulfil the same method within the class.
 When grouping many objects that have the same behaviours.
+It makes the class flexible and extendable.
 
 
-# Composition
+# Composition (HAS A)
 
 6. What do we mean by 'composition' in reference to object-oriented programming?
-Composition is when we use an Interface to reference a particular group of behaviours, and then use that interface to pass into a class.  This means that at run time, we can attribute that particular instance of the Interface to any object that implements that Interface, and this can change at each runtime.
 
 It is when a object is created by combining(composing) several different objects with their own specific behaviours.
+Composition is when a class references a group or family of behaviours.
 
 7. When would you use composition? Provide a simple example in Java.
-*...* *i.e. a car has an Array List of Wheels Objects, a body Object, An Array List of door Objects*
+
+i.e. a car has an Array List of Wheels Objects, a body Object, An Array List of door Objects.
+a car could have an Engine (perhaps a superclass and you could use polymorphism to change the engine (!))
 
 8. What is/are the advantage(s) of using composition?
-*It is much less code and keeps your program DRY...
+
+It is much less code and keeps your program DRY...
 It also allows greater flexibilty and the option to add further objects to a program without having to re-factor
-It also helps keep classes Single Responsibility.*
+It also helps keep classes Single Responsibility.
+allows you to swap at runtime when combining this with polymorphism.
 
 9. What happens to the behaviours when the object composed of them is destroyed?
-*Those behaviours are also destroyed*
+
+Those behaviours are also destroyed
